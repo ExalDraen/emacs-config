@@ -91,5 +91,12 @@
 ;; eval-buffer is used a lot when doing config file shenanigans
 (global-set-key (kbd "<C-M-return>") 'eval-buffer)
 
+;; Configure backups
+(setq backup-directory-alist '(("." . "~/.emacs.d/backups" ))
+  backup-by-copying t    ; Don't delink hardlinks
+  version-control t      ; Use version numbers on backups
+  delete-old-versions t  ; Automatically delete excess backups
+  kept-new-versions 10   ; how many of the newest versions to keep
+  kept-old-versions 5    ; and how many of the old
+  )
 (provide 'init-misc-prefs)
-;;; init-misc-prefs.el ends here
