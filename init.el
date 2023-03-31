@@ -15,7 +15,6 @@
 (require 'init-evil)
 (require 'init-helm)
 (require 'init-magit)
-;;(require 'init-org-journal)
 (require 'init-org)
 (require 'init-lang)
 (require 'init-misc-prefs)
