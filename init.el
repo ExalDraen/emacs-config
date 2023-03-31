@@ -1,5 +1,5 @@
 ;; Package mgmt setup things
-  (require 'use-package) ;; built-in as of emacs29
+  (require 'package) ;; built-in as of emacs29
   ;; Add MELPA, see https://melpa.org/partials/getting-started.html
   (add-to-list 'package-archives
              '("melpa-stable" . "https://stable.melpa.org/packages/") t)
