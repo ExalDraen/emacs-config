@@ -18,11 +18,11 @@
 
 ;; Integration between evil and org
 ;; The config ensures that we autoload in org mode and can use normal tab to cycle
-(use-package evil-org
-    ;;:ensure t
+(use-package org-evil
+    :ensure org-evil
     :after org
     ;; autoload evil-org-mode when org mode is activated
-    :hook (org-mode . evil-org-mode)
+    :hook (org-mode . org-evil-mode)
     :config
     ;; Enable extra key bindings
     (evil-org-set-key-theme '(navigation heading))
